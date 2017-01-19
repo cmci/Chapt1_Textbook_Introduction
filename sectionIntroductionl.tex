@@ -1,0 +1,82 @@
+\section{Introduction}\label{introduction}
+
+Since the beginning of the 21st century the use of digital imaging microscopy has spread widely among life scientists and analysis of image data became increasingly important. Already long before those technologies became available, started in the 17th century, life scientists have been sketching - or imaging manually - living organisms and their structures to understand how they develop themselves and operate.
+Computer-based image analysis radically upgraded these
+traditional methods in life sciences, and opened novel approaches to measure shapes, distributions and dynamics from multi-dimensional images captured through high-end microscopes. From those data life scientists are trying to
+decode the essence of biological systems in their spatial and temporal context. However, digital image analysis in life sciences is a new method that only became available recently in the life science community, and many scientists are still struggling to improve their image analysis skills.
+
+We wrote this textbook aiming at such life scientists who have some
+experience in biological image analysis and who are trying to learn more to
+increase their own capability in extracting quantitative information
+from image data.
+
+\subsection{What is Bioimage analysis?}\label{what-is-bioimage-analysis}
+
+It might sound evident to you, but we would like
+to clarify our definition to avoid the confusion in the use of the term
+``image analysis'' and also to be clear with the goal of this textbook.
+
+In the image processing field, ``image analysis'' is a way of
+identifying objects and patterns in images by computer. We quote a definition from
+a famous image processing textbook by Gonzales and Woods (Gonzalez and Woods,
+1992, Digital Image Processing, Addison-Wesley Publishing):
+
+\begin{quote}
+''Image analysis is a process of discovering, identifying, and
+understanding patterns that are relevant to the performance of an
+image-based task. One of the principal goals of image analysis by
+computer is to endow a machine with the capability to approximate, in
+some sense, a similar capability in human beings.'' 
+\end{quote}
+
+In the light of this definition image analysis, which also is called ``computer vision'',
+aims at mimicking the way we see the world and how we identify its visible structures. Image
+analysis in biology does undeniably also hold this element, but more importantly, its main goal is to \textbf{measure} biological structures and phenomena in order to study and understand biological systems in a quantitative way.
+
+To achieve this task, we in fact do not have to be bothered with
+similarity to the human recognition - we have more emphasis on the
+objectivity of quantitative measurement, rather than how that
+computer-based recognition becomes in agreement with human recognition.
+Therefore, in biology, image analysis is a process of identifying
+spatial distribution of biological components in images, and measure
+their characteristics to study
+their underlying mechanisms in an unbiased way. To underline this difference in the goals of image analysis in
+the two fields and to distinguish them from each other we will now on refer to image analysis in biology as
+\textbf{bioimage analysis} .
+
+\subsection{Scope of this Textbook}\label{scope-of-this-textbook}
+
+The textbook starts with an overview of existing bioimage analysis tools and programming environments (chapter 2).
+
+The next two chapters (chapters 3 and 4) are dedicated to the basics of programming in ImageJ macro language and Matlab.  These two software packages programming environments are arguably the most widespread tools used for bioimage analysis. If you are already acquainted with these programming languages you can skip this part.
+
+Based on the programming skills acquired in the first chapters, chapters 5 to 10 are devoted to typical biological problems. The reader is guided step by step to write increasingly challenging ImageJ and Matlab scripts addressing these problems. These scripts are powerful tools to automatically extract quantitative and statistical data from biological images.
+
+Image analysis can also be performed without writing a single line of code, but programming
+does offer many advantages. 
+Firstly, repetitive tasks can be automated to decrease the user workloads. 
+Secondly, written programs are the best practice to secure the reproducibility of a given experimental protocol down to statistical results. 
+Thirdly, written programs can be excellent documentations of
+complex image analysis workflows, allowing us to inspect the details of the processing in a glance and provides a platform to further improve those methods.
+Finally workflows are endowed with modularity, which enables us to construct new programs by re-using some sections of existing workflows and modifying them.
+
+Many image processing and analysis tools are available and offered to
+life scientists, but instructions on how to efficiently combine functions of those tools, 
+and how to design workflows matched to a specific problem have largely been missing. 
+We think that this is because bioimage analysis problems are so diverse that
+standardization of bioimage analysis is barely applicable. For this
+reason, each chapter focuses on a specific and clearly defined biological
+problem. By providing information on the general approach as well as details on solving the particular task, we hope that the reader will get valuable information to customize these image analysis workflows to one's own need, and also learn a template and good practices to  write some new efficient workflows from scratch.
+
+In this book we minimized explanations on the details of each
+image processing steps, i.e. details of functions and algorithms. For their mathematical backgrounds and how they
+are implemented, many textbooks focusing on those aspects are readily available (e.g.~Gonzalez and Woods). Instead, we provide more explanations on how to construct the image analysis workflows by
+assembling various image processing algorithms. We start from original
+images and measure certain biological events, in order to provide the 
+information necessary for biologists to analyze their own image data in a quantitative way.
+
+We hope that this book will help you in solving your problems. Moreover we are looking forward that you will soon discover the joy of programming bioimage analysis workflows and then share those knowledge and the joy with your peers, to further advance this field.
+
+\subsection{Acknowledgements}\label{acknowledgements}
+
+We thank Perrine Paul-Gilloteaux (Institut Curie) and Julien Collombeli (IRB Barcelona) for their commitment in organizing European BioImage Analysis Symposium (EuBIAS) with us, the scope of which includes publishing this textbook. We thank Cornelia Monzel (University of Heidelberg \& Institut Curie) for keeping us on the track to publish this textbook and also for the critical review of this introduction. We are grateful to the Course and Conference office of EMBL Heidelberg, who supported our bioimage analysis course for the past three years. All chapters in this textbook were originally from those courses. Jason Swedlow (Univ. Dundee) has been a passionate supporter of EuBIAS and we thank him for his continuous encouragements and supports. Jean Salamero (Institut Curie) has been a great adviser and supporter of our initiative. We would like to thank Rainer Pepperkok (EMBL Heidelberg) for supporting the activity of image analysts community especially to KM.  Finally we would like to thank our fellow bioimage analysts - all the authors of this textbook, instructors and former student of the course - for their full commitment and enthusiasm in learning, sharing and  transmitting this knowledge, to increase the speed and quality of scientific research in the field.

@@ -1,0 +1,73 @@
+
+\iflatexml
+\documentclass[]{book}
+\fi
+\usepackage[utf8]{inputenc}
+
+\usepackage[]{graphicx}
+
+\usepackage[]{natbib}
+
+  % \usepackage[]{wileySTM} % Not (yet) supported by LaTeXML.
+
+\usepackage[\ifnum\pdfoutput=1breaklinks\fi]{hyperref}
+\usepackage[]{subfig}
+\usepackage[]{color}
+
+\definecolor{gray09}{rgb}{0.9,0.9,0.9}  %background for codes
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{blue}{rgb}{0,0,1}
+\definecolor{lightblue}{rgb}{0,0.8,1}
+\definecolor{Dark}{gray}{.2}
+\definecolor{Medium}{gray}{.6}
+\definecolor{Light}{gray}{.8}
+\definecolor{shadecolor}{rgb}{0.9, 0.9, 1}
+\newenvironment{indentexercise}[1]%
+{{\setlength{\leftmargin}{2em}}%
+\textbf{Exercise \thesubsection-#1}
+\begin{list}
+{}% 
+	\item%
+}
+{\end{list}
+}
+\newenvironment{indentFiji}%
+{\begin{list}{}%
+         {\setlength{\leftmargin}{1em}}%
+         \item[]%
+}
+{\end{list}}
+\newenvironment{indentCom}%
+{\begin{list}{}%
+         {\setlength{\leftmargin}{1em}}%
+         \item[]%
+}
+{\end{list}}
+\newcommand{\ijmenu}[1][]{\texttt{\small#1}}
+\newcommand{\ijmacro}[1][]{\textbf{\small#1}}
+\newcommand{\ilcom}[1][]{\texttt{\small#1}}
+\newcommand{\tab}[][]{\hspace*{3em}}
+\newcommand{\HRule}[][]{\rule{\linewidth}{0.5mm}}
+\usepackage[]{listings}
+
+\lstset{ %
+basicstyle=\small\ttfamily, % same as above, but use typewriter
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1 each line 
+                                numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{gray09},  % choose the background color. You must add \usepackage{color}
+keywordstyle=\color{blue}, 	%added
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                escapeinside={\%*}{*)},         % if you want to add a comment within your code
+morekeywords={*,...},            % if you want to add more keywords to the set
+morecomment=[l]{//},
+morecomment=[s]{/*}{*/},
+morestring=[b]",
+}
