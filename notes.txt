@@ -1,0 +1,17 @@
+
+Comments from Kota  to Coni
+1. I am not sure if digital imaging became widely spread "since 1970's",
+because it was very rare people analyzing images using computer
+till 1990's.
+
+Quantitative image analysis, even with "cinematography" already started in the 19th century. from 1970's to 1990's, people were still taking analog pictures and then converted them to digital images using scanners and frame grabber boards. Only starting from 1990's, after a company "Photometrix" released cooled CCD camera into market, direct capturing of digital images start to spread. For these reasons, I would say  "Since the the beginning of 21st century the use of digital imaging microscopy and techniques has spread widely among life scientists and analysis of image data became increasingly important."
+
+2. Biologists started sketching microscope images in 17th century.
+
+3. "However, since digital image analysis in cell biology/biotechnology/biomedicine or biophysical chemistry, i.a., is a new method that only became common in
+the life science community during recent years, many scientists are struggling
+to sufficiently expand their image analysis knowledge and techniques. "
+
+I think naming all fields is too much so I change this to 
+
+However, since digital image analysis in life sciences is a new method that only became common in the life science community during recent years, many scientists are struggling to sufficiently expand their image analysis knowledge and techniques. 
